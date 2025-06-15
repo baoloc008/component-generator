@@ -63,7 +63,7 @@ You can override the default templates in your workspace settings.
 - Node.js if you want to build it locally.
 
 ## 📸 Demo
-![demo-generate-component](./src/assets/demo-generate-component.gif)
+![demo-generate-component](https://raw.githubusercontent.com/baoloc008/component-generator/main/src/assets/demo-generate-component.gif)
 
 ## 📝 License
 
