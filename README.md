@@ -18,7 +18,7 @@ By default, when you generate a component named `Button`, the following files ar
 components/
 └── Button/
     ├── Button.tsx
-    ├── Button.module.css
+    ├── Button.module.scss
     └── index.ts
 ```
 
