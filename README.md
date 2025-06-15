@@ -30,7 +30,7 @@ You can override the default templates in your workspace settings.
 
 ### Example:
 
-```json
+```jsonc
 // .vscode/settings.json
 {
   "new-component-generator.templates": {
