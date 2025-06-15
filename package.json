@@ -1,0 +1,65 @@
+{
+  "name": "new-component-generator",
+  "displayName": "ComponentGenerator",
+  "description": "ComponentGenerator",
+  "version": "0.0.4",
+  "repository": {
+    "url": "https://github.com/baoloc008/new-component-generator"
+  },
+  "publisher": "baoloc008",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "new-component-generator.generateComponent",
+        "title": "Generate Component"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "new-component-generator.generateComponent",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Component Generator",
+      "properties": {
+        "new-component-generator.templates": {
+          "type": "object",
+          "description": "Custom component templates (fileName -> content)",
+          "default": {}
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.70.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
