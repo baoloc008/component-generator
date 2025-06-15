@@ -2,9 +2,9 @@
   "name": "new-component-generator",
   "displayName": "ComponentGenerator",
   "description": "ComponentGenerator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
-    "url": "https://github.com/baoloc008/new-component-generator"
+    "url": "https://github.com/baoloc008/component-generator"
   },
   "publisher": "baoloc008",
   "engines": {

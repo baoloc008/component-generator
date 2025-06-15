@@ -41,25 +41,19 @@ You can override the default templates in your workspace settings.
 ```
 
 - Use `{{ComponentName}}` as a placeholder in your templates.
-
 - You can define any filenames and contents.
 
 ## 🚀 How to Use
 
 - Open a folder in VS Code.
-
 - Right-click on a folder in the Explorer and choose Generate Component.
-
 - Enter a component name like MyComponent or shared/Card.
-
 - The component will be generated with the specified templates.
-
 - If you trigger the command via the Command Palette or without right-clicking, the component will be created in the root of the workspace.
 
 ## 🧱 Requirements
 
 - VS Code version ^1.70.0 or later.
-
 - Node.js if you want to build it locally.
 
 ## 📸 Demo
